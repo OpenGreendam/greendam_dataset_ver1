@@ -1,0 +1,24 @@
+base_config:
+- configs/naive/ds1000.yaml
+raw_data_dir: data/greendam_xybb_ver_medium/raw
+binary_data_dir: data/greendam_xybb_ver_medium/binary
+residual_channels: 512
+residual_layers: 20
+test_prefixes:
+- wave_18_2_slice_0001
+- _ting_ning_ling_jing_qing
+- wave_10_0_slice_0000
+- wave_24_6_slice_0000
+- _ran_R_can_R_san
+- wave_11_0_slice_0001
+- wave_20_11_slice_0000
+- wave_24_9_slice_0001
+- wave_4_11_slice_0000
+- wave_27_13_slice_0001
+max_tokens: 80000
+max_sentences: 48
+lr: 0.0004
+decay_steps: 50000
+val_check_interval: 2000
+num_ckpt_keep: 5
+max_updates: 320000
